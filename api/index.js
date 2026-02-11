@@ -44,7 +44,7 @@ async function handleEvent(event) {
   }
 
   try {
-    const model = genAI.getGenerativeModel({ model: "models/gemini-1.5-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash-latest" });
     const result = await model.generateContent(prompt);
     const response = await result.response;
     return client.replyMessage(event.replyToken, { type: 'text', text: response.text() });
