@@ -1,6 +1,12 @@
-"dependencies": {
+{
+  "name": "my-horoscope-bot",
+  "version": "1.0.0",
+  "main": "api/index.js",
+  "dependencies": {
     "@line/bot-sdk": "^7.5.2",
-    "@google/generative-ai": "^0.21.0", 
+    "@google/generative-ai": "^0.21.0",
     "express": "^4.18.2"
+  }
 }
+
 
